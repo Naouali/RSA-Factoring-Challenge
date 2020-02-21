@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def fac(number):	
-	for i in range(2,100):
-		for j in range (2,100):
+	for i in range(2,number):
+		for j in range (2,number):
 			if i * j == number:
 				k_list = []
 				m_list = []
