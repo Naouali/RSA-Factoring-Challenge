@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 from fac import fac
-from opening import *
 from lists_to_numbers import *
 import sys
 fi = sys.argv[1]
-print(fi)
-p = openings(fi)
-k = nums(p)
+fil = open(fi, 'r')
+values = []
+for x in fil:
+	values.append(int(x))
+print(values)
+k = nums(values)
 print(k)
