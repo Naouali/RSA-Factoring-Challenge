@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-from fac import fac
-from lists_to_numbers import *
+from lists_to_numbers import nums
 import sys
 fi = sys.argv[1]
 fil = open(fi, 'r')
 values = []
 for x in fil:
-	values.append(int(x))
-print(values)
+	if type(x) != str:
+		values.append(int(x))
 k = nums(values)
 print(k)
